@@ -1,0 +1,4 @@
+together
+pillow
+pydantic==2.10.6
+streamlit

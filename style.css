@@ -1,0 +1,87 @@
+/* style.css */
+
+/* --- 全局字体和背景 --- */
+body {
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* --- 主要区块的卡片式设计 --- */
+[data-testid="stContainer"] {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- 侧边栏美化 --- */
+[data-testid="stSidebar"] {
+    background-color: #f8f9fa;
+    border-right: 1px solid #e9ecef;
+}
+
+/* --- 按钮美化 --- */
+[data-testid="stButton"] > button {
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* --- Expander (可折叠部分) 美化 --- */
+[data-testid="stExpander"] {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+[data-testid="stExpander"] summary {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+}
+
+/* --- 初始占位符样式 --- */
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #aaa;
+    font-style: italic;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* --- Markdown 标题样式 --- */
+h2 {
+    color: #2a9d8f; /* 一种漂亮的青色 */
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 8px;
+    margin-top: 0px !important;
+}
+
+/* --- 警告框样式微调 --- */
+[data-testid="stAlert"] {
+    border-radius: 8px;
+}
+/* --- 在 style.css 文件末尾追加 --- */
+
+/* --- 欢迎界面的容器样式 --- */
+.welcome-container {
+    text-align: center;
+    padding: 4em 2em;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+}
+
+.welcome-container h2 {
+    color: #2a9d8f;
+    border: none;
+    font-size: 2.5em;
+}
+
+.welcome-container p {
+    font-size: 1.2em;
+    color: #495057;
+    line-height: 1.6;
+}
